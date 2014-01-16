@@ -4,6 +4,7 @@ Car Tracker
 Car tracker that is build using python over Telit GM862-GPS module. It is designed to interpret SMS messages to do commands as getting the location and stop the vehicle.
 
 The commands format in SMS are:
+
 1. SETPWD <PASSWORD>  //Command that is used to set the password for the first time.
 2. GL <PASSWORD>      //Stands for get location and it should return a link to Google Maps with the proper coordinates.
 3. STP  <PASSWORD>    //Issues the command to stop the vehicle which in turn gives 1 on GPIO pin 8.
@@ -16,6 +17,7 @@ The code is designed to interpret only SMS messages but the module is capable of
 The code simply issues AT commands to communicate with the hardware and the circuit design can be found in folder named "Locus".
 
 Things to buy for the circuit that may not be clearly stated in the schematics:
+
 1. N-Channel MOSFET: https://www.sparkfun.com/products/10213
 2. SparkFun 50-pin evaluation board for GM862-GPS. It's currently obsolete, you can search for replacements as this one http://www.mikroe.com/products/view/469/smartgm862-gps-board/ or design your own using the SMD connector https://www.sparkfun.com/products/283.
 
@@ -23,6 +25,10 @@ The circuit exposes "Source" and "Drain" for the MOSFET used and then you should
 
 I'd be glad to assist anyone and contributors are most welcomed!
 
-
+CREDITS
+=======
+1. Islam Khattab.
+2. Mohamed Omar.
+3. Hani Amr.
 
 
